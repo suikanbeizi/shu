@@ -1,0 +1,151 @@
+<table id="tblShowPlan" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td>
+					<table width="660" border="1" bordercolor="black" cellpadding="5" cellspacing="0" class="tblShowPlan" style="margin-left:auto; margin-right:auto">
+						<tr>
+							<td height="40" colspan="6" align="center">
+								<font size="5"><B>黑龙江大学本科生毕业论文（设计）开题计划</B></font>
+							</td>
+						</tr>
+						<tr>
+							<td height="30" colspan="6" style="border-bottom: 0px;">
+								<span align="left"><strong>论文（设计）题目：</strong></span>&nbsp;&nbsp;[教师审核通过]
+							</td>
+						</tr>
+						<tr>
+							<td height="40" colspan="6" style="border-top: 0px; height: 30px">
+								&nbsp;&nbsp;&nbsp;&nbsp; <span class="middleTitle">
+									网上售书推荐系统的设计与实现</span>
+							</td>
+						</tr>
+						<tr>
+							<td width="100" height="25" align="center">
+								<span align="center"><strong>姓名</strong></span>
+							</td>
+							<td width="120" align="center">
+								<span align="center"><span class="middleTitle">周博文</span>
+								</span>
+							</td>
+							<td width="100" align="center">
+								<span align="center"><strong>学号</strong></span>
+							</td>
+							<td width="120" align="center">
+								<span align="center"><span class="middleTitle">20123224</span>
+								</span>
+							</td>
+							<td width="100" align="center">
+								<span align="center"><strong>指导教师</strong></span>
+							</td>
+							<td width="120" align="center">
+								<span align="center"><span class="middleTitle">郭龙江</span>
+									
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td height="25" colspan="2" align="center">
+								<span align="center"><strong>专业</strong></span>
+							</td>
+							<td colspan="4">
+								<span>&nbsp;<span class="middleTitle">计算机科学与技术(计算机应用)</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td height="25" colspan="2" align="center">
+								<span align="center"><strong>论文（设计）起止时间</strong></span>
+							</td>
+							<td colspan="4">
+								<span class="middleTitle">2016年11月23日&nbsp;至&nbsp;
+									2017年5月23日
+									&nbsp;(共 <b><span style="color: red">
+										25</span></b>周)</span>
+								
+							</td>
+						</tr>
+						<tr>
+							<td height="25" colspan="6">
+								<span><strong>一、论文（设计）研究背景与意义</strong></span>
+							</td>
+						</tr>
+						<tr>
+							<td height="200" colspan="6" valign="top">
+								<p><span style="font-size: 10.5pt; font-family: 宋体;"></span></p>
+<p><span style="font-size: 10.5pt; font-family: 宋体;"></span></p>
+<p><strong><span style="font-size: 12pt; font-family: 宋体;">（一）</span></strong><strong><span style="font-size: 12pt; font-family: 宋体;">研究背景</span></strong></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 10.5pt; font-family: 宋体;"><span style="font-family: 宋体;">随着科学的迅速发展，自</span>1999<span style="font-family: 宋体;">年阿里巴巴成立，到</span><span style="font-family: calibri;">2016</span><span style="font-family: 宋体;">年</span></span><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;">阿里巴巴正式宣布已经成为全球最大的</span><a href="http://baike.baidu.com/view/101782.htm"><span class="null" style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #136ec2; letter-spacing: 0pt;">零售</span></a><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;">交易平台</span><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;">。我们迎来了互联网高速发展的年代，传统零售商受到了电商的强烈冲击。越来越多的人更加的趋向于网上购物，因为网上更加方便快捷，无论你在哪里，无论你在干什么，都能买到你想要的东西。学生作为中国最主要，思想先进的一流人，各种各样的行动，更加的离不开电子购物。但是相比其他物品，书籍类销售在网上并不是特别好。</span> </p>
+<p><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;">&nbsp;</span><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;"><span style="font-family: 宋体;">网上书店通过人与电子通信方式的结合，依靠计算机网络，以通讯技术为基础，实现图书销售的网上交易。网上书店同传统的店面书店相比，网上书店的经营方式和销售渠道是全新的，它</span>24<span style="font-family: 宋体;">小时的全天候和全方位服务时店面书店所不能比及的，成本低廉更是开设网上书店的主要原因，而与其他商品相比，书籍运送几乎不怕碰撞碎裂，不具时效性，同时书本具有功能单一，形式简单，易于判断和选择而独具优势，最适合于网上交易，再次是单价低，降低了消费者第一次在网络购物的门槛，所以网上书店成为了电子商务的先锋。</span></span> </p>
+<p><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;">&nbsp;</span><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;"><span style="font-family: 宋体;">本研究课题主要研究一个具有个性化搜索功能的网上书店销售系统。即网上书店不但让用户轻松、快捷、方便进行在线购物，让管理员能够发布各种图书信息，完成网上书店所必须具备的基本功能之外，更重要的是本书店在搜索图书方面为用户创建了一个友好的搜索环境，并在整体上实现用户注册、用户管理、书籍浏览、书籍查询、在线购书和系统管理等功能。主要采用超文本连接语言</span>html<span style="font-family: 宋体;">、</span><span style="font-family: arial;">JSP</span><span style="font-family: 宋体;">、</span><span style="font-family: arial;">SQL server2005</span><span style="font-family: 宋体;">等技术来实现网上书店系统，采用了面向对象的软件开发方法，按照软件工程的基本步骤进行了系统分析、设计和实现。</span></span> </p>
+<p><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;"></span></p>
+<p><strong><span style="font-size: 12pt; font-family: 宋体;">（二）</span></strong><strong><span style="font-size: 12pt; font-family: 宋体;">研究意义</span></strong></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;">&nbsp;<span style="font-family: 宋体;">网络销售越来越受到重视，许多大型企业以及相关行业纷纷建立自己的网站，直接面向消费者开展销售业务和服务，来自全美国图书协会的数字显示，超过</span>40%<span style="font-family: 宋体;">的经销商都建立自己的销售网站，其销售额逐年增长，现有大部分网站的设计没有给企业和客户直接带来更多的业绩和便利。这也是我们要着手的问题：我们只有能够提供更人性化，更方便的实用的购书推荐系统才能让网上书店有自己的特点。</span></span> </p>
+<p></p>
+<p><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;"></span></p>
+								
+							</td>
+						</tr>
+						<tr>
+							<td height="25" colspan="6">
+								<span><strong>二、论文（设计）的主要内容</strong></span>
+							</td>
+						</tr>
+						<tr>
+							<td height="200" colspan="6" valign="top">
+								<p><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;"></span></p>
+<p><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">网上售书推荐系</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[</span></sup><sup><span style="font-size: 12pt; font-family: 宋体; vertical-align: super;">2</span></sup><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;"><span style="font-family: 宋体;">统主要涉及</span>html、</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">JSP</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[1]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">、</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">SQL server2005</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[</span></sup><sup><span style="font-size: 12pt; font-family: 宋体; vertical-align: super;">4</span></sup><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">等技术。三种技术相辅相成。实现网上书店功能：</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">&nbsp;&nbsp;1.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">书籍展示：把书进行分类，使顾客可以浏览图书，单击每种书可以看到详细信息。 &nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">2.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">用户注册：普通用户可以浏览书籍，只有通过注册了以后才能实现网上购物等功能。 &nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">3.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">用户登录：提供注册用户的登录。 &nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">4.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">订购图书：成功登录的用户可以在订购图书。 &nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">5.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">订单管理</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[</span></sup><sup><span style="font-size: 12pt; font-family: 宋体; vertical-align: super;">3</span></sup><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">：用户可以查看自己的订单的内容，但是不能修改订单，只有管理员有订单的修改删除等权限。 &nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">6.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">修改密码</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[</span></sup><sup><span style="font-size: 12pt; font-family: 宋体; vertical-align: super;">5</span></sup><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">：输入正确的用户名和密码后可以在该页修改密码。 &nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">7.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">修改个人信息</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[</span></sup><sup><span style="font-size: 12pt; font-family: 宋体; vertical-align: super;">6</span></sup><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">：输入正确的用户名和密码可以修改除密码和用户名以外的个人信息。 &nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">8.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">书籍管理</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[</span></sup><sup><span style="font-size: 12pt; font-family: 宋体; vertical-align: super;">9</span></sup><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">：管理员对书籍进行添加、修改、删除等操作。&nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">9.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">公告发布：管理员对网站进行公告发布。 &nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">10.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">用户管理</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[</span></sup><sup><span style="font-size: 12pt; font-family: 宋体; vertical-align: super;">10</span></sup><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">：管理员对用户具有管理权限，可以添加、删除、修改用户信息。&nbsp;</span><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">11.</span><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">搜索功能实现</span><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">[</span></sup><sup><span style="font-size: 12pt; font-family: 宋体; vertical-align: super;">8</span></sup><sup><span style="font-size: 12pt; font-family: calibri; vertical-align: super;">]</span></sup><span style="font-size: 10.5pt; font-family: 宋体; color: #333333; letter-spacing: 0pt;">：网站最核心的功能，用户可以利用自定义的搜索来找到自己想要的图书。在搜索图书时可以进行模糊查找，用户提交后返回查找结果。其中着重点在于搜索推荐功能。</span> </p>
+<p><span style="font-size: 10.5pt; font-family: 宋体; background: #ffffff; color: #333333; letter-spacing: 0pt;"><span style="font-size: 10.5pt; font-family: 宋体; letter-spacing: 0pt; background-size: initial; background-origin: initial; background-clip: initial;"></span><span style="font-family: 宋体;"></span></span></p>
+<p><strong><span class="null" style="font-size: 12pt; font-family: 宋体;">参考文献</span></strong></p>
+<p><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">[1] <span style="font-family: 宋体;">申吉红，廖学峰等</span><span style="font-family: arial;">.JSP</span><span style="font-family: 宋体;">课程设计案例精编</span><span style="font-family: arial;">[M].</span><span style="font-family: 宋体;">北京：清华大学出版社</span><span style="font-family: arial;">.2007</span><span style="font-family: 宋体;">．</span></span> </p>
+<p><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">[2] <span style="font-family: 宋体;">苗连强，</span><span style="font-family: arial;">JSP</span><span style="font-family: 宋体;">程序设计基础教程</span><span style="font-family: arial;">[M].</span><span style="font-family: 宋体;">北京：人民邮电出版社</span><span style="font-family: arial;">.2008</span><span style="font-family: 宋体;">．<br />
+</span></span></p>
+<p><span style="font-size: 10.5pt; font-family: arial; background: #ffffff; color: #333333; letter-spacing: 0pt;">[3] <span style="font-family: 宋体;">周忠荣，数据库原理与应用，北京：清华大学出版社，</span><span style="font-family: arial;">2003.</span></span></p>
+<p><span style="font-size: 10.5pt; font-family: arial; background: #ffffff; color: #333333; letter-spacing: 0pt;">[4] <span style="font-family: 宋体;">刘勇，周学金 </span><span style="font-family: arial;">SQL Server 2000</span><span style="font-family: 宋体;">基础教程，北京：清华大学出版社，</span><span style="font-family: arial;">2005.</span></span></p>
+<p><span style="font-size: 10.5pt; font-family: arial; background: #ffffff; color: #333333; letter-spacing: 0pt;">[5] <span style="font-family: 宋体;">何跃，网络程序设计教程</span><span style="font-family: arial;">ASP</span><span style="font-family: 宋体;">程序设计</span><span style="font-family: arial;">[M].</span><span style="font-family: 宋体;">四川</span><span style="font-family: arial;">:</span><span style="font-family: 宋体;">电子科技大学出版社</span><span style="font-family: arial;">,2004.</span></span></p>
+<p><span style="font-size: 10.5pt; font-family: arial; background: #ffffff; color: #333333; letter-spacing: 0pt;">[6] <span style="font-family: 宋体;">金旭亮，吴彬，网站建设教程</span><span style="font-family: arial;">[M].</span><span style="font-family: 宋体;">北京：高等教育出版社，</span><span style="font-family: arial;">2010</span></span></p>
+<p><span style="font-size: 10.5pt; font-family: arial; background: #ffffff; color: #333333; letter-spacing: 0pt;">&nbsp;[7] <span style="font-family: 宋体;">戎马工作室，</span><span style="font-family: arial;">Dreamweaver 8</span><span style="font-family: 宋体;">与</span><span style="font-family: arial;">ASP</span><span style="font-family: 宋体;">动态网站开发自学导航</span><span style="font-family: arial;">[M].</span><span style="font-family: 宋体;">北京：机械工业出版社，</span><span style="font-family: arial;">2006.</span></span></p>
+<p><span style="font-size: 10.5pt; font-family: arial; color: #333333; letter-spacing: 0pt;">[8] <span style="font-family: 宋体;">李迎秋，姜仲，</span><span style="font-family: arial;">JSP</span><span style="font-family: 宋体;">实用教程</span><span style="font-family: arial;">[M].</span><span style="font-family: 宋体;">大连：大连理工大学出版社，</span><span style="font-family: arial;">2007.<br />
+<span style="font-size: 12pt; font-family: 'times new roman'; color: #333333; background-color: #ffffff;"></span></span></span></p>
+<p><span style="font-family: arial;"><span style="font-size: 10.5pt; font-family: 'times new roman';">[9] </span><span style="font-size: 10.5pt; font-family: arial; background: #ffffff; color: #222222;">Rahm E, Bernstein P A. A survey of approaches to automatic schema matching[J]. the VLDB Journal, 2001, 10(4): 334-350.</span></span></p>
+<p><span style="font-size: 11pt; font-family: arial; background: #ffffff; color: #222222;"></span></p>
+<p class="p" class="p"><span style="font-size: 10.5pt; font-family: 宋体;">[10]</span><span style="font-size: 10.5pt; font-family: arial; background: #ffffff; color: #222222;">&nbsp;Canny J. A computational approach to edge detection[J]. Pattern Analysis and Machine Intelligence, IEEE Transactions on, 1986 (6): 679-698.</span> </p>
+<p></p>
+<div></div>
+<p>&nbsp;</p>
+<p></p>
+								
+							</td>
+						</tr>
+						<tr>
+							<td height="25" colspan="6">
+								<span><strong>三、论文（设计）进度安排</strong></span>
+							</td>
+						</tr>
+						<tr>
+							<td height="200" colspan="6" valign="top">
+								<p class="p"><span style="font-size: 12pt; font-family: 宋体;">2015.11.23</span><span style="font-size: 12pt; font-family: 宋体;">&mdash;&mdash;</span><span style="font-size: 12pt; font-family: 宋体;">2015.12.31&nbsp;</span><span style="font-size: 12pt; font-family: 宋体;">明确需求，查阅文献，确定思路，撰写开题报告</span><span style="font-size: 12pt; font-family: 宋体;">&nbsp;</span> </p>
+<p class="p"><span style="font-size: 12pt; font-family: 宋体;">2016.01.01</span><span style="font-size: 12pt; font-family: 宋体;">&mdash;&mdash;</span><span style="font-size: 12pt; font-family: 宋体;">2013.01.31 </span><span style="font-size: 12pt; font-family: 宋体;">设计概要，划分大致模块并写入文档</span><span style="font-size: 12pt; font-family: 宋体;">&nbsp;</span> </p>
+<p class="p"><span style="font-size: 12pt; font-family: 宋体;">2016.02.01</span><span style="font-size: 12pt; font-family: 宋体;">&mdash;&mdash;</span><span style="font-size: 12pt; font-family: 宋体;">2016.02.29 </span><span style="font-size: 12pt; font-family: 宋体;">详细设计，撰写中期报告</span><span style="font-size: 12pt; font-family: 宋体;">&nbsp;</span> </p>
+<p class="p"><span style="font-size: 12pt; font-family: 宋体;">2016.03.01</span><span style="font-size: 12pt; font-family: 宋体;">&mdash;&mdash;</span><span style="font-size: 12pt; font-family: 宋体;">2016.03.31 </span><span style="font-size: 12pt; font-family: 宋体;">根据文档完成编码设计</span><span style="font-size: 12pt; font-family: 宋体;">&nbsp;</span> </p>
+<p class="p"><span style="font-size: 12pt; font-family: 宋体;">2016.04.01</span><span style="font-size: 12pt; font-family: 宋体;">&mdash;&mdash;</span><span style="font-size: 12pt; font-family: 宋体;">2016.04.30 </span><span style="font-size: 12pt; font-family: 宋体;">准备数据进行测试和调试，并撰写毕业论文</span><span style="font-size: 12pt; font-family: 宋体;">&nbsp;</span> </p>
+<p><span style="font-size: 12pt; font-family: 宋体;">2016.05.01</span><span style="font-size: 12pt; font-family: 宋体;">&mdash;&mdash;</span><span style="font-size: 12pt; font-family: 宋体;">2016.05.23 </span><span style="font-size: 12pt; font-family: 宋体;">整理论文，准备答辩</span></p>
+								
+							</td>
+						</tr>
+						<tr>
+							<td height="25" colspan="6">
+								<span><strong>四、指导教师意见</strong></span>
+							</td>
+						</tr>
+						<tr>
+							<td height="60" colspan="6" valign="top">
+								审核通过
+								
+							</td>
+						</tr>
+					</table>
+					<br />
+				</td>
+	</tr>
+</table>

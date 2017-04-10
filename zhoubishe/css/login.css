@@ -1,0 +1,113 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "微软雅黑";
+}
+input:focus{
+	outline: medium;
+}
+.head{
+	width: 100%;
+	margin-top: 20px;
+}
+.headLogo{
+	width: 1200px;
+	margin: 0 auto;
+	height: 80px;
+	line-height: 80px;
+	text-align: left;
+}
+.headLogo img{
+	height: 77px;
+}
+.loginBg{
+	width: 100%;
+}
+.loginMain{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.loginMainImg{
+	float: left;
+}
+.wrap{
+	float: right;
+}
+.loginMainImg{
+	width: 60%;
+	margin-left: 50px;
+}
+.loginMainImg img{
+	width: 600px;
+}
+.wrap {
+	width: 360px;
+	border: 1px solid #e2e2e2;
+	box-shadow: 0px 1px 2px #eee;
+	padding: 15px 25px 15px 15px;
+	margin-top: 100px;
+	border-radius: 5px;
+	text-align: center;
+	margin-right: 50px;
+}
+.wrap h1{
+	font-size: 30px;
+	color: #333;
+}
+.wrap div{
+	margin-top: 30px;
+	position: relative;
+}
+.wrap div span{
+	color: #999;
+	position: absolute;
+	top: 16px;
+	left: 18px;
+}
+.wrap .input{
+	width: 300px;
+	height: 44px;
+	padding: 8px 30px;
+	color: #666;
+	border-radius: 2px;
+	border: 1px solid  #e2e2e2;
+}
+.loginsub{
+	width: 300px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 0;
+	background: #8a6d3b;
+}
+.zhuce {
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+.zhuce a{
+	color: #666;
+}
+.footer{
+	width: 100%;
+	border-top: 1px solid #e2e2e2; 
+}
+.footerBg{
+	padding-top: 50px;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.footerBg a{
+	color: #666;
+}
+.footerBg p{
+	color: #666;
+	margin: 10px 0;
+}
