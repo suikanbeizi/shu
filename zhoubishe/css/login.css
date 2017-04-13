@@ -168,3 +168,7 @@ input:focus{
 	right: 275px;
 	color: #666;
 }
+.regBgFrom a{
+	display: inline-block;
+	margin-left: 200px;
+}

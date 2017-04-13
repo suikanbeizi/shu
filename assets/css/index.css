@@ -1,0 +1,217 @@
+
+.head{
+/*	padding-bottom: 10px;*/
+	
+}
+.searchForm{
+	display: inline-block;
+	height: 40px;
+	margin-left: 180px;
+}
+.searchForm .search{
+	width: 500px;
+	height: 40px;
+	padding: 5px 10px;
+	border: 2px solid #d33f14;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px
+}
+.searchForm .searchSub{
+	width: 48px;
+	height: 40px;
+	line-height: normal;
+	background-color: #d33f14;
+	color: #fff;
+	border: 0;
+	margin-left: -4px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px
+}
+.dingdan{
+	display: inline-block;
+	width: 107px;
+	height: 40px;
+	background-color: #d33f14;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	/*padding-right: 15px;*/
+	margin-left: 20px;
+}
+.dingdan:hover{
+	color: #fff;
+}
+.dingdan span{
+	margin-right: 5px;
+	font-size: 20px;
+}
+.headTop{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.headTop ul{
+	overflow: hidden;
+	list-style: none;
+	background-color: #d33f14;
+	margin: 0;
+	border-radius: 5px;
+}
+.headTop ul li:nth-child(1){
+	color: #fff;
+
+}
+.headTop ul li:nth-child(1) span{
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+.headTop ul li{
+	font-size: 16px;
+	float: left;
+	width: 110px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	
+}
+.headTop ul li a{
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.headTop ul li a:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+/*main*/
+.indexcarousel{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.item img{
+	width: 1200px;
+}
+.indexT{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.indexTleft,.indexTright{
+	float: left;
+	
+}
+.indexTleft{
+	width: 880px;
+	overflow: hidden;
+}
+.indexTright{
+	width: 290px;
+	margin-left: 20px;
+}
+.indexTleft h1,.indexTright h1,.indexX h1{
+	display: inline-block;
+	width: 100%;
+	height: 42px;
+	text-align: left;
+	line-height: 56px;
+	border-bottom: 1px solid #e2e2e2;
+	font-size: 18px;
+	margin: 0;
+	font-weight: bold;
+}
+.indexTleft h1 a,.indexTright h1 a,.indexX h1 a{
+	font-size: 12px;
+	float: right;
+	color: #666;
+	font-weight: normal;
+}
+.book{
+	width: 290px;
+    height: 192px;
+    float: left;
+    padding: 10px;
+}
+.bookC{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.bookCleft,.bookCright{
+	float: left;
+}
+.bookCleft,.bookCleft img{
+	width: 114px;
+    height: 162px;
+}
+.bookCleft{
+	margin-left: 5px;
+	-webkit-box-shadow: -8px 7px 7px -2px rgba(226,228,235,1);
+	-moz-box-shadow: -8px 7px 7px -2px rgba(226,228,235,1);
+	box-shadow: -8px 7px 7px -2px rgba(226,228,235,1);
+}
+.bookCright{
+	width: 143px;
+    height: 162px;
+    padding-left: 10px;
+}
+.title{
+	height: 36px;
+}
+.title a{
+	font-size: 14px;
+	color: #333;
+}
+.title a:hover{
+	color: #396ec3;
+}
+.anthor,.price{
+	height: 22px;
+	margin-top: 8px;
+	line-height: 22px;
+}
+.price{
+	color: red;
+
+}
+.des{
+	height: 38px;
+	line-height: 18px;
+	margin-top: 20px;
+	color: #666;
+	overflow: hidden;
+}
+.xsTOP{
+	padding-left: 28px;
+	border:1px solid #e2e2e2;
+}
+.xsTOP ol li{
+	width: 240px;
+}
+.xsTOP ol li h3{
+	font-size: 14px;
+	margin-left: 10px;
+	color: #666;
+}
+.xsTOP ol li h3 span{
+	float: right;
+	color: red;
+}
+.xsTOP ol li:nth-child(1) h3{
+	color: #d33f14;
+	font-size: 18px;
+}
+.xsTOP ol li:nth-child(2) h3{
+	color: #396ec3;
+	font-size: 16px;
+}
+/*独家好书*/
+.indexX{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}

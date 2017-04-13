@@ -7,42 +7,27 @@
 	 <link href="<?php echo site_url('assets/css/login.css')?>" rel="stylesheet">
 </head>
 <body style="background-color: #f6f9fb;">
+<?php include 'top.php'; ?>
 <div class="head">
 	<div class="headLogo">
-		<a href=""><img src="<?php echo site_url('assets/images/logo.png')?>" alt=""></a>
+		<a href="<?php echo site_url('index.php/shu_user/index')?>"><img src="<?php echo site_url('assets/images/logo.png')?>" alt=""></a>
 	</div>
 </div>
 <div class="regBg">
 	<h1>新用户注册</h1>
 	<div class="regBgFrom">
 		<form action="<?php echo site_url('index.php/shu_user/reg_msg');?>" method="post">
-			<div><label for="">用户名</label><input type="text" placeholder="请输入用户名" name="username" class="username input"><span class="usertishi"></span></div>
-			<div><label for="">登录密码</label><input type="password" name="password" class="password" placeholder="请输入密码"><span class="passtishi" ></span></div>
-			<div><label for="">确认密码</label><input type="password" class="password1" placeholder="请确定密码"><span class="passtishi1"></span></div>
-			<div><label for="">验证码</label><input type="text" placeholder="请输入验证码" class="check"><a href="javascript:void(0);" class="huantu"></a><span class="checktishi"></span></div>
+			<div><label for="">用户名</label><input type="text" placeholder="请输入用户名" name="username" class="username input" maxlength="8"><span class="usertishi"></span></div>
+			<div><label for="">登录密码</label><input type="password" name="password" class="password" placeholder="请输入密码" maxlength="10"><span class="passtishi" ></span></div>
+			<div><label for="">确认密码</label><input type="password" class="password1" placeholder="请确定密码" maxlength="10"><span class="passtishi1"></span></div>
+			<div><label for="">验证码</label><input type="text" placeholder="请输入验证码" class="check" maxlength="4"><a href="javascript:void(0);" class="huantu"></a><span class="checktishi"></span></div>
 			<div><input type="checkbox" name="agree" class="agree"><span>我已经阅读并同意了《交易条款》和《社区条款》</span></div>
 			<div><input type="submit" name="sub" class="regsub" value="立即注册" disabled="true"></div>
 		</form>
+		<a href="<?php echo site_url('index.php/shu_user/login');?>" class="reglogin">登录</a>
 	</div>
 </div>
-<div class="footer">
-	<div class="footerBg">
-		<a href="">公司简介</a>
-		<span>|</span>
-		<a href="">手机书籍</a>
-		<span>|</span>
-		<a href="">公司首页</a>
-		<span>|</span>
-		<a href="">公司简介</a>
-		<span>|</span>
-		<a href="">手机书籍</a>
-		<span>|</span>
-		<a href="">公司首页</a>
-		<p>相关证书4das56d4a1s2df1a5645af4a12</p>
-		<p>d1as23d1a3s2d1a2s3d1f84a564g4ag64a56dfg8w7er8r7fa8f42as4f6af54gj</p>
-
-	</div>
-</div>
+<?php include 'footer.php'; ?>
 </body>
 	<script src="<?php echo site_url('assets/js/jquery-2.1.3.min.js');?>"></script>
     <script src="<?php echo site_url('assets/js/bootstrap.min.js');?>"></script>
