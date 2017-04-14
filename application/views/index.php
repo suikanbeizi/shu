@@ -6,31 +6,11 @@
 	<link href="<?php echo site_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">
 	<link href="<?php echo site_url('assets/css/login.css')?>" rel="stylesheet">
 	<link href="<?php echo site_url('assets/css/index.css')?>" rel="stylesheet">
+	<link href="<?php echo site_url('assets/css/index_common.css')?>" rel="stylesheet">
 </head>
 <body>
 <?php include 'top.php'; ?>
-<div class="head">
-	<div class="headLogo">
-		<a href="<?php echo site_url('index.php/shu_user/index')?>"><img src="<?php echo site_url('assets/images/logo.png')?>" alt=""></a>
-		<form action="" method="" class="searchForm">
-			<input type="text" name="search" class="search" placeholder="请输入你想要查找的书记">
-			<input type="submit" class="searchSub">	
-		</form>
-		<a href="#" class="dingdan"><span class="glyphicon glyphicon-gift"></span>我的订单</a>
-	</div>
-	<div class="headTop">
-		<ul>
-			<li><span class="glyphicon glyphicon-book"></span>图书分类</li>
-			<li><a href="#">文艺</a></li>
-			<li><a href="#">经管</a></li>
-			<li><a href="#">社科</a></li>
-			<li><a href="#">生活</a></li>
-			<li><a href="#">教育</a></li>
-			<li><a href="#">科技</a></li>
-			<li><a href="#">童书</a></li>
-		</ul>
-	</div>
-</div>
+<?php include 'head.php'; ?>
 <div class="indexcarousel">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
@@ -103,7 +83,7 @@
 				</div>
 				<div class="bookCright">
 					<div class="title">
-						<a href="#"><?php echo $book->book_name ?></a>
+						<a href="<?php echo site_url('index.php/shu_user/shu_detail/'.$book->book_id) ?>"><?php echo $book->book_name ?></a>
 					</div>
 					<div class="anthor">
 						<?php echo $book->book_anthor ?>
@@ -167,7 +147,7 @@
 
 <?php include 'footer.php'; ?>
 </body>
-<script src="<?php echo site_url('assets/js/jquery-2.1.3.min.js');?>"></script>
+	<script src="<?php echo site_url('assets/js/jquery-2.1.3.min.js');?>"></script>
     <script src="<?php echo site_url('assets/js/bootstrap.min.js');?>"></script>
     <script src="<?php echo site_url('assets/js/index.js');?>"></script>
 </html>

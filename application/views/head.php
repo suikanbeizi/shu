@@ -1,0 +1,22 @@
+<div class="head">
+	<div class="headLogo">
+		<a href="<?php echo site_url('index.php/shu_user/index')?>"><img src="<?php echo site_url('assets/images/logo.png')?>" alt=""></a>
+		<form action="" method="" class="searchForm">
+			<input type="text" name="search" class="search" placeholder="请输入你想要查找的书记">
+			<input type="submit" class="searchSub">	
+		</form>
+		<a href="#" class="dingdan"><span class="glyphicon glyphicon-gift"></span>我的订单</a>
+	</div>
+	<div class="headTop">
+		<ul>
+			<li><span class="glyphicon glyphicon-book"></span>图书分类</li>
+			<li><a href="#">文艺</a></li>
+			<li><a href="#">经管</a></li>
+			<li><a href="#">社科</a></li>
+			<li><a href="#">生活</a></li>
+			<li><a href="#">教育</a></li>
+			<li><a href="#">科技</a></li>
+			<li><a href="#">童书</a></li>
+		</ul>
+	</div>
+</div>

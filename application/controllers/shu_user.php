@@ -77,4 +77,8 @@ class Shu_user extends CI_Controller {
 		$this->load->view('index',$data);
 	}
 
+    // 商品详情
+    public function shu_detail($id){
+        $this->load->view('shu_detail');
+    }
 }
