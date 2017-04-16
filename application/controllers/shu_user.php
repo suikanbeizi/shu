@@ -79,6 +79,65 @@ class Shu_user extends CI_Controller {
 
     // 商品详情
     public function shu_detail($id){
-        $this->load->view('shu_detail');
+        $this-> load ->model('user_model');
+        $result=$this->user_model->get_detail($id);
+        
+        $data=array(
+                'details'=> $result
+            );
+        // echo var_dump($data);
+        $this->load->view('shu_detail',$data);
+    }
+    // 好评商品
+    public function shu_haoping(){
+        $this->load->model('user_model');
+        $query=$this->user_model->get_haoping();
+        $data=array(
+                'haopings'=>$query
+            );
+        $this->load->view('shu_haoping',$data);
+    }
+
+    public function shu_rexiao(){
+        $this->load->model('user_model');
+        $query=$this->user_model->get_rexiao();
+        $data=array(
+                'rbooks'=>$query
+            );
+        $this->load->view('shu_rexiao',$data);
+    }
+    public function shu_chushou(){
+        $this->load->model('user_model');
+        $query=$this->user_model->get_chushou();
+        $data=array(
+                'cbooks'=>$query
+            );
+        $this->load->view('shu_chushou',$data);
+    }
+
+    // 分类页面
+    public function shu_fenlei(){
+        $fenlei=$_GET['fenlei'];
+        $this->load->model('user_model');
+        $query=$this->user_model->get_fenlei($fenlei);
+        $data=array(
+                'fbooks'=>$query
+            );
+        $this->load->view('shu_fenlei',$data,$fenlei);
+    }
+
+    public function fenlei_paixu(){
+        $paixun=$_POST['paixun'];
+        $fenlei=$_POST['fenlei'];
+        echo $fenlei;
+        $this->load->model('user_model');
+        $query=$this->user_model->fenlei_paixu($paixun,$fenlei);
+        if($query){
+            echo $query;
+        }
+        else{
+            echo "error";
+        }
+        
     }
 }

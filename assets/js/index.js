@@ -92,3 +92,33 @@ $('.username').on('input', function(event) {
 		}
 		
 	});
+	// 分类页面排序
+	$('.hp_title h2 a').click(function(event) {
+		var text=$(this).text();
+		var fenlei=$('title').text();
+		if($(this).attr('class')!='cstyle'){
+			$('.hp_title h2 a').removeClass('cstyle');
+			$(this).addClass('cstyle');
+		}
+		var data={
+			'paixun':text,
+			"fenlei":fenlei
+		};
+		
+		//var url="<?php  echo site_url('index.php/shu_user/fenlei_paixu') ?>";
+		$.ajax({
+			url: 'fenlei_paixu',
+			type: 'post',
+			dataType: 'text',
+			data: data,
+			success:function(data){
+				console.log(data);
+			},
+			error:function(error) {
+				console.log('a');
+			}
+		})
+		
+		
+
+	});

@@ -71,7 +71,7 @@
 <div class="indexT">
 	<!-- 独家好评-->
 	<div class="indexTleft">
-		<h1>独家好评<a href="#">查看更多</a></h1>
+		<h1>独家好评<a href="<?php echo site_url('index.php/shu_user/shu_haoping') ?>" target="_blank">查看更多</a></h1>
 
 		<?php
 			foreach($rbooks as $book){ 
@@ -102,13 +102,13 @@
 	</div>
 	<!-- 畅销榜 -->
 	<div class="indexTright">
-		<h1>热销榜<a href="#">更多热销榜</a></h1>
+		<h1>热销榜<a href="<?php echo site_url('index.php/shu_user/shu_rexiao') ?>" target="_blank">更多热销榜</a></h1>
 		<div class="xsTOP">
 			<ol>
 			<?php
 			foreach($xbooks as $book){ 
 			?>
-				<li><h3><?php echo $book->book_name ?><span><?php echo '￥'.$book->book_price ?></span></h3></li>
+				<li><h3><a href="<?php echo site_url('index.php/shu_user/shu_detail/'.$book->book_id) ?>"><?php echo $book->book_name ?></a><span><?php echo '￥'.$book->book_price ?></span></h3></li>
 			<?php } ?>	
 			</ol>
 		</div>
@@ -116,7 +116,7 @@
 </div>
 <div class="indexX">
 	<!-- 正在出售 -->
-	<h1>正在出售<a href="#">查看更多</a></h1>
+	<h1>正在出售<a href="<?php echo site_url('index.php/shu_user/shu_chushou') ?>" target="_blank">查看更多</a></h1>
 	<?php
 			foreach($cbooks as $book){ 
 			?>
@@ -127,7 +127,7 @@
 				</div>
 				<div class="bookCright">
 					<div class="title">
-						<a href="#"><?php echo $book->book_name ?></a>
+						<a href="<?php echo site_url('index.php/shu_user/shu_detail/'.$book->book_id) ?>"><?php echo $book->book_name ?></a>
 					</div>
 					<div class="anthor">
 						<?php echo $book->book_anthor ?>
