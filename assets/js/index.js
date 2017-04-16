@@ -110,9 +110,9 @@ $('.username').on('input', function(event) {
 			url: 'fenlei_paixu',
 			type: 'post',
 			dataType: 'text',
-			data: data,
+			data: {"paixun":text,"fenlei":fenlei},
 			success:function(data){
-				console.log(data);
+				console.log(data[0]);
 			},
 			error:function(error) {
 				console.log('a');

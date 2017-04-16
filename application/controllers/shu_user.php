@@ -129,11 +129,10 @@ class Shu_user extends CI_Controller {
     public function fenlei_paixu(){
         $paixun=$_POST['paixun'];
         $fenlei=$_POST['fenlei'];
-        echo $fenlei;
         $this->load->model('user_model');
         $query=$this->user_model->fenlei_paixu($paixun,$fenlei);
         if($query){
-            echo $query;
+            return $query;
         }
         else{
             echo "error";
