@@ -6,10 +6,10 @@ class User_model extends  CI_Model{
         return $query=$this->db->insert("user",$data);
     }
     public function check_reg($data){
-        return $query=$this->db->get_where("user",$data)->result();
+        return $query=$this->db->get_where("user",$data)->row();
     }
     public function do_login($data){
-        return $query=$this->db->get_where("user",$data)->result();
+        return $query=$this->db->get_where("user",$data)->row();
     }
     public function get_rbook(){
     	$sql="select * from book order by book_pingfen desc limit 6";
@@ -47,29 +47,41 @@ class User_model extends  CI_Model{
     	// return $query=$this->db->get("book")->result();
     }
     // 分类
-     public function get_fenlei($fenlei){
+     public function get_fenlei_x($fenlei){
      	$sql="select * from book where book_fenlei='".$fenlei."' order by book_csnum";
-    	 return $query=$this->db->query($sql)->result();
+    	 return $xquery=$this->db->query($sql)->result();
+     }
+     public function get_fenlei_p($fenlei){
+        $sql="select * from book where book_fenlei='".$fenlei."' order by book_pingfen";
+         return $pquery=$this->db->query($sql)->result();
+     }
+     public function get_fenlei_z($fenlei){
+        $sql="select * from book where book_fenlei='".$fenlei."' order by book_time";
+         return $zquery=$this->db->query($sql)->result();
+     }
+     public function get_fenlei_j($fenlei){
+        $sql="select * from book where book_fenlei='".$fenlei."' order by book_price";
+         return $jquery=$this->db->query($sql)->result();
      }
 
-     public function fenlei_paixu($paixun,$fenlei){
-        if($paixun=='销量'){
-            $sql="select * from book where book_fenlei='".$fenlei."' order by book_csnum";
-            return $query=$this->db->query($sql)->result();
-        }
-        if($paixun=='好评'){
-            $sql="select * from book where book_fenlei='".$fenlei."' order by book_pingfen";
-            return $query=$this->db->query($sql)->result();
-        }
-        if($paixun=='最新'){
-            $sql="select * from book where book_fenlei='".$fenlei."' order by book_time";
-            return $query=$this->db->query($sql)->result();
-        }
-        if($paixun=='价格'){
-            $sql="select * from book where book_fenlei='".$fenlei."' order by book_price";
-            return $query=$this->db->query($sql)->result();
-        }
+     // public function fenlei_paixu($paixun,$fenlei){
+     //    if($paixun=='销量'){
+     //        $sql="select * from book where book_fenlei='".$fenlei."' order by book_csnum";
+     //        return $query=$this->db->query($sql)->result();
+     //    }
+     //    if($paixun=='好评'){
+     //        $sql="select * from book where book_fenlei='".$fenlei."' order by book_pingfen";
+     //        return $query=$this->db->query($sql)->result();
+     //    }
+     //    if($paixun=='最新'){
+     //        $sql="select * from book where book_fenlei='".$fenlei."' order by book_time";
+     //        return $query=$this->db->query($sql)->result();
+     //    }
+     //    if($paixun=='价格'){
+     //        $sql="select * from book where book_fenlei='".$fenlei."' order by book_price";
+     //        return $query=$this->db->query($sql)->result();
+     //    }
         
 
-     }
+     // }
 }

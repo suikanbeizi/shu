@@ -7,24 +7,25 @@ $('.username').on('input', function(event) {
 		}
 		else{
 			$('.usertishi').html("");
-			$('.regsub').attr('disabled',false);
+			subdisabled();
 		}
 		var url="<?php echo site_url('index.php/shu_user/check_reg'); ?>";
 		var dataa={
 			username:$(this).val()
 		};
 		$.ajax({
-			url: url,
+			url: 'check_reg',
 			type: 'post',
 			dataType: 'text',
-			data: dataa,
+			data: {'username':$(this).val()},
 			success:function(data){
 				if(data==1){
 					$('.usertishi').html('用户名已存在');
-					console('a');
+					$('.regsub').attr('disabled',true);
+					
 				}
 				else if(data==0){
-					$('.usertishi').html('用户名可使用');
+					subdisabled();
 				}
 			},
 			error:function(d){
@@ -44,7 +45,7 @@ $('.username').on('input', function(event) {
 		}
 		else{
 			$('.passtishi').html("");
-			$('.regsub').attr('disabled',false);
+			subdisabled();
 		}
 	});
 	$('.password1').on('input', function(event) {
@@ -56,14 +57,14 @@ $('.username').on('input', function(event) {
 		}
 		else{
 			$('.passtishi1').html('√');
-			$('.regsub').attr('disabled',false);
+			subdisabled();
 		}
 		
 	});
 
 	$('.check').on('input', function(event) {
 		event.preventDefault();
-		subdisabled();
+
 
 		if($(this).val()!=$('.huantu').html()){
 			$('.checktishi').html('验证码有错误');
@@ -71,7 +72,7 @@ $('.username').on('input', function(event) {
 		}
 		else{
 			$('.checktishi').html('√');
-			$('.regsub').attr('disabled',false);
+			subdisabled();
 		}
 	});
 	var checkNum=Math.floor(Math.random()*1000+999);
@@ -100,24 +101,48 @@ $('.username').on('input', function(event) {
 			$('.hp_title h2 a').removeClass('cstyle');
 			$(this).addClass('cstyle');
 		}
-		var data={
-			'paixun':text,
-			"fenlei":fenlei
-		};
-		
+		// var data={
+		// 	'paixun':text,
+		// 	"fenlei":fenlei
+		// };
+		//console.log(text);
+		if(text=='销量'){
+			$('.hp_x').css('display','block');
+			$('.hp_p').css('display','none');
+			$('.hp_z').css('display','none');
+			$('.hp_j').css('display','none');
+		}
+		if(text=='好评'){
+			$('.hp_x').css('display','none');
+			$('.hp_p').css('display','block');
+			$('.hp_z').css('display','none');
+			$('.hp_j').css('display','none');
+		}
+		if(text=='最新'){
+			$('.hp_x').css('display','none');
+			$('.hp_p').css('display','none');
+			$('.hp_z').css('display','block');
+			$('.hp_j').css('display','none');
+		}
+		if(text=='价格'){
+			$('.hp_x').css('display','none');
+			$('.hp_p').css('display','none');
+			$('.hp_z').css('display','none');
+			$('.hp_j').css('display','block');
+		}
 		//var url="<?php  echo site_url('index.php/shu_user/fenlei_paixu') ?>";
-		$.ajax({
-			url: 'fenlei_paixu',
-			type: 'post',
-			dataType: 'text',
-			data: {"paixun":text,"fenlei":fenlei},
-			success:function(data){
-				console.log(data[0]);
-			},
-			error:function(error) {
-				console.log('a');
-			}
-		})
+		// $.ajax({
+		// 	url: 'fenlei_paixu',
+		// 	type: 'post',
+		// 	dataType: 'text',
+		// 	data: {"paixun":text,"fenlei":fenlei},
+		// 	success:function(data){
+		// 		console.log(data[0]);
+		// 	},
+		// 	error:function(error) {
+		// 		console.log('a');
+		// 	}
+		// })
 		
 		
 

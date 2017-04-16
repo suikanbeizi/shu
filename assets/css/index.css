@@ -166,3 +166,6 @@
 	color: #d33f14 !important;
 	border-bottom: 2px solid #d33f14;
 }
+.hp_p,.hp_z,.hp_j{
+	display: none;
+}

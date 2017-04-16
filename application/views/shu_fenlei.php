@@ -20,9 +20,90 @@
 		<a href="javascript:void(0);">价格<span class="glyphicon glyphicon-arrow-down"></span></a></h2>
 </div>
 <div class="hp_bg">
-	<div class="hp_main">
+	<div class="hp_main hp_x">
 		<?php
-			foreach($fbooks as $book){ 
+			foreach($xbooks as $book){ 
+			?>
+		<div class="book">
+			<div class="bookC">
+				<div class="bookCleft">
+					<img src="<?php echo site_url($book->book_img)?>" alt="">
+				</div>
+				<div class="bookCright">
+					<div class="title">
+						<a href="<?php echo site_url('index.php/shu_user/shu_detail/'.$book->book_id) ?>"><?php echo $book->book_name ?></a>
+					</div>
+					<div class="anthor">
+						<?php echo $book->book_anthor ?>
+					</div>
+					<div class="price">
+						<?php echo '￥'.$book->book_price ?>
+					</div>
+					<div class="des">
+						<?php echo $book->book_des ?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
+	</div>
+	<div class="hp_main hp_p" >
+		<?php
+			foreach($pbooks as $book){ 
+			?>
+		<div class="book">
+			<div class="bookC">
+				<div class="bookCleft">
+					<img src="<?php echo site_url($book->book_img)?>" alt="">
+				</div>
+				<div class="bookCright">
+					<div class="title">
+						<a href="<?php echo site_url('index.php/shu_user/shu_detail/'.$book->book_id) ?>"><?php echo $book->book_name ?></a>
+					</div>
+					<div class="anthor">
+						<?php echo $book->book_anthor ?>
+					</div>
+					<div class="price">
+						<?php echo '￥'.$book->book_price ?>
+					</div>
+					<div class="des">
+						<?php echo $book->book_des ?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
+	</div>
+	<div class="hp_main hp_z" >
+		<?php
+			foreach($zbooks as $book){ 
+			?>
+		<div class="book">
+			<div class="bookC">
+				<div class="bookCleft">
+					<img src="<?php echo site_url($book->book_img)?>" alt="">
+				</div>
+				<div class="bookCright">
+					<div class="title">
+						<a href="<?php echo site_url('index.php/shu_user/shu_detail/'.$book->book_id) ?>"><?php echo $book->book_name ?></a>
+					</div>
+					<div class="anthor">
+						<?php echo $book->book_anthor ?>
+					</div>
+					<div class="price">
+						<?php echo '￥'.$book->book_price ?>
+					</div>
+					<div class="des">
+						<?php echo $book->book_des ?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
+	</div>
+	<div class="hp_main hp_j" >
+		<?php
+			foreach($jbooks as $book){ 
 			?>
 		<div class="book">
 			<div class="bookC">

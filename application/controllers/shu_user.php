@@ -37,7 +37,7 @@ class Shu_user extends CI_Controller {
 		);
 		$this-> load ->model('user_model');
         $result=$this->user_model->check_reg($data);
-        var_dump($result);
+        
         if($result){
         	echo "1";
         }
@@ -56,7 +56,7 @@ class Shu_user extends CI_Controller {
         $this-> load ->model('user_model');
         $result=$this->user_model->do_login($data);
         if($result){
-        	echo "111";
+        	echo "<script>alert('登录成功');location.href='../shu_user/index'</script>";
         }
         else{
         	echo "<script>alert('账号密码填写错误');location.href='../shu_user/login'</script>";
@@ -119,24 +119,30 @@ class Shu_user extends CI_Controller {
     public function shu_fenlei(){
         $fenlei=$_GET['fenlei'];
         $this->load->model('user_model');
-        $query=$this->user_model->get_fenlei($fenlei);
+        $xquery=$this->user_model->get_fenlei_x($fenlei);
+        $pquery=$this->user_model->get_fenlei_p($fenlei);
+        $zquery=$this->user_model->get_fenlei_z($fenlei);
+        $jquery=$this->user_model->get_fenlei_j($fenlei);
         $data=array(
-                'fbooks'=>$query
+                'xbooks'=>$xquery,
+                'pbooks'=>$pquery,
+                'zbooks'=>$zquery,
+                'jbooks'=>$jquery
             );
         $this->load->view('shu_fenlei',$data,$fenlei);
     }
 
-    public function fenlei_paixu(){
-        $paixun=$_POST['paixun'];
-        $fenlei=$_POST['fenlei'];
-        $this->load->model('user_model');
-        $query=$this->user_model->fenlei_paixu($paixun,$fenlei);
-        if($query){
-            return $query;
-        }
-        else{
-            echo "error";
-        }
+    // public function fenlei_paixu(){
+    //     $paixun=$_POST['paixun'];
+    //     $fenlei=$_POST['fenlei'];
+    //     $this->load->model('user_model');
+    //     $query=$this->user_model->fenlei_paixu($paixun,$fenlei);
+    //     if($query){
+    //         return $query;
+    //     }
+    //     else{
+    //         echo "error";
+    //     }
         
-    }
+    // }
 }
