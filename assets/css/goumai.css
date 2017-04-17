@@ -1,0 +1,78 @@
+.gm{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+}
+ul li{
+	list-style: none;
+}
+.xzDz h1 ,.dingdanMsg h1{
+	font-size: 18px;
+	border-bottom: 1px solid #ff2832;
+	padding-bottom: 20px;
+}
+.xzDz ul li{
+	height: 36px;
+	line-height: 36px;
+	padding-left: 100px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.xzDz ul li span{
+	display: inline-block;
+	margin-left: 30px;
+}
+.dingdanMsg{
+	margin-top: 100px;
+	overflow: hidden;
+}
+.dingdanMsg table{
+	width: 100%;
+}
+.dingdanMsg tr{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+}
+.dingdanMsg tr td{
+	width: 20%;
+	text-align: center;
+	
+}
+.dingdanMsgTr td{
+	border-bottom: 2px solid #f2f7ff;
+}
+.dingdanMsg tr td img{
+	width: 40px;
+	margin-right: 5px;
+}
+.dingdanMsg tr td input{
+	width: 40px;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+}
+.yunsong{
+	margin-top: 100px;
+}
+.yunsong p{
+	padding-left: 59%;
+	background-color: #f2f7ff;
+	margin-bottom: 2px;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+.tijiao{
+	display: inline-block;
+	float: right;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	background-color: #ff2832;
+	margin-top: 10px;
+}
+.tijiao:hover{
+	color: #fff;
+}

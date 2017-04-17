@@ -143,7 +143,17 @@ $('.username').on('input', function(event) {
 		// 		console.log('a');
 		// 	}
 		// })
-		
+		//
 		
 
 	});
+	// 立即购买
+	$(function(){
+    		
+    		$('.price_num').text($('.bNum').val()*$('.price').text());
+    		$('.heji').text($('.bNum').val()*$('.price').text());
+    	});
+    	$('.bNum').on('input',function(event) {
+    		$('.price_num').text($('.bNum').val()*$('.price').text());
+    		$('.heji').text($('.bNum').val()*$('.price').text());
+    	});

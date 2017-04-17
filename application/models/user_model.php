@@ -28,7 +28,7 @@ class User_model extends  CI_Model{
     }
     public function get_detail($id){
     	$sql="select * from book where book_id=".$id;
-    	return $result=$this->db->query($sql)->result();
+    	return $result=$this->db->query($sql)->row();
     }
     // h好评页面
     public function get_haoping(){
@@ -84,4 +84,33 @@ class User_model extends  CI_Model{
         
 
      // }
-}
+     // 获取个人信息
+     public function get_person($session_id){
+        $sql="select * from user where user_id='".$session_id."'";
+        return $query=$this->db->query($sql)->row();
+     }
+     // 更新个人信息
+     public function inset_person($data,$session_id){
+        $this->db->where('user_id', $session_id);
+        return $query=$this->db->update('user',$data);
+     }
+     // 获取个人收货地址
+     public function get_myaddress($da) {
+        return $query=$this->db->get_where("sh_address",$da)->result();
+     }
+     // 删除收货地址
+     public function del_address($address_id){
+        $this->db->where('address_id', $address_id);
+        return $query=$this->db->delete('sh_address');
+        
+     }
+     // 添加收货地址
+     public function insert_address($data){
+        return $query=$this->db->insert("sh_address",$data);
+     }
+     // 更新书籍数量
+     public function updata_book_num($da,$book_id){
+        $this->db->where('book_id', $book_id);
+        return $query=$this->db->update('book',$da);
+     }
+}   

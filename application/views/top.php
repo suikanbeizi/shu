@@ -1,3 +1,4 @@
+
 <div class="top">
 	<div class="topM">
 		<nav class="navbar navbar-default">
@@ -15,21 +16,45 @@
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      
+		      <?php
+			$session_id = $this->session->userdata('user_id');
+			$username=$this->session->userdata('user_name');
+			if($session_id){
+				?>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="<?php echo site_url('index.php/shu_user/login');?>">登录</a></li>
-		        <li><a href="<?php echo site_url('index.php/shu_user/reg')?>">注册</a></li>
+		        <li><a href="javascript:void(0);">欢迎您！<?php echo $username ?></a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="#">个人信息</a></li>
-		            <li><a href="#">我的订单</a></li>
-		            <li><a href="#">购物车</a></li>
+		            <li><a href="<?php echo site_url('index.php/shu_user/person')?>">个人信息</a></li>
+		            <li><a href="<?php echo site_url('index.php/shu_user/dingdan')?>">我的订单</a></li>
+		            <li><a href="<?php echo site_url('index.php/shu_user/gouwuche')?>">购物车</a></li>
+		            <li><a href="<?php echo site_url('index.php/shu_user/zhuxiao')?>">退出</a></li>
 		            <!-- <li role="separator" class="divider"></li>
 		            <li><a href="#">Separated link</a></li> -->
 		          </ul>
 		        </li>
 		      </ul>
+		      <?php 
+				} 
+				else{
+					 ?>
+					 <ul class="nav navbar-nav navbar-right">
+				        <li><a href="<?php echo site_url('index.php/shu_user/login')?>">登录</a></li>
+				        <li><a href="<?php echo site_url('index.php/shu_user/reg')?>">注册</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="<?php echo site_url('index.php/shu_user/person')?>">个人信息</a></li>
+		            		<li><a href="<?php echo site_url('index.php/shu_user/dingdan')?>">我的订单</a></li>
+		            		<li><a href="<?php echo site_url('index.php/shu_user/gouwuche')?>">购物车</a></li>
+				            <!-- <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li> -->
+				          </ul>
+				        </li>
+				      </ul>
+			<?php 	}
+			?>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>

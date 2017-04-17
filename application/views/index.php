@@ -9,7 +9,9 @@
 	<link href="<?php echo site_url('assets/css/index_common.css')?>" rel="stylesheet">
 </head>
 <body>
-<?php include 'top.php'; ?>
+<?php
+		include 'top.php'; 
+?>
 <?php include 'head.php'; ?>
 <div class="indexcarousel">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

@@ -47,6 +47,7 @@ class Shu_user extends CI_Controller {
 	}
 
 	public function do_login(){
+        $this->load->library('session');
 		$user_name=$this->input->post('username');
     	$password=$this->input->post('password');
     	$data=array(
@@ -55,6 +56,11 @@ class Shu_user extends CI_Controller {
         );
         $this-> load ->model('user_model');
         $result=$this->user_model->do_login($data);
+        $da=array(
+            'user_id'=> $result->user_id,
+            'user_name'=>$result->username
+            );
+        $this->session->set_userdata($da);
         if($result){
         	echo "<script>alert('登录成功');location.href='../shu_user/index'</script>";
         }
@@ -62,6 +68,11 @@ class Shu_user extends CI_Controller {
         	echo "<script>alert('账号密码填写错误');location.href='../shu_user/login'</script>";
         }
 	}
+    // 退出
+    public function zhuxiao(){
+        $this->session->sess_destroy();
+        echo "<script>alert('退出成功');location.href='../shu_user/index'</script>";
+    }
 
 	// 首页
 	public function index(){
@@ -145,4 +156,139 @@ class Shu_user extends CI_Controller {
     //     }
         
     // }
+    // 个人信息
+    public function person(){
+        $session_id = $this->session->userdata('user_id');
+        if(!$session_id){
+            echo "<script>alert('请先登录');location.href='../shu_user/login'</script>";
+        }
+        else{
+            $this->load->model('user_model');
+            $query=$this->user_model->get_person($session_id);
+            $data=array(
+                'users'=> $query
+                );
+            $this->load->view('person',$data);
+        }
+        
+    }
+    // 完善个人信息
+    public function inset_person(){
+        $session_id = $this->session->userdata('user_id');
+        $username=$this->input->post('username');
+        $user_city=$this->input->post('city');
+        $user_sex=$this->input->post('sex');
+        $user_shenfen=$this->input->post('shenfen');
+        $user_des=$this->input->post('jishao');
+        $data=array(
+            'username'=>$username,
+            'user_city'=>$user_city,
+            'user_sex'=>$user_sex,
+            'user_shenfen'=>$user_shenfen,
+            'user_des'=>$user_des
+            );
+        $this->load->model('user_model');
+        $query=$this->user_model->inset_person($data,$session_id);
+        if($query){
+            echo "<script>alert('修改成功');location.href='../shu_user/person'</script>";
+        }
+    }
+    // 地址
+     public function myaddress(){
+        $session_id = $this->session->userdata('user_id');
+        if(!$session_id){
+            echo "<script>alert('请先登录');location.href='../shu_user/login'</script>";
+        }
+        else{
+            $this->load->model('user_model');
+            $da=array(
+                'user_id'=>$session_id
+                );
+            $query=$this->user_model->get_myaddress($da);
+            $data=array(
+                'addresses'=> $query
+                );
+            $this->load->view('myaddress',$data);
+        }
+        
+    }
+    // 删除地址
+    public function deladdress($address_id){
+        $this->load->model('user_model');
+        $query=$this->user_model->del_address($address_id);
+        if($query){
+            echo "<script>alert('已经删除该地址');location.href='../myaddress'</script>";
+        }
+    }
+    // 添加地址
+    public function insert_address(){
+        $session_id = $this->session->userdata('user_id');
+        $sh_name=$this->input->post('sh_name');
+        $sh_diqu=$this->input->post('sh_diqu');
+        $sh_jiedao=$this->input->post('sh_jiedao');
+        $sh_youbian=$this->input->post('sh_youbian');
+        $sh_tel=$this->input->post('sh_tel');
+        $data=array(
+            'sh_name'=>$sh_name,
+            'sh_diqu'=>$sh_diqu,
+            'sh_jiedao'=>$sh_jiedao,
+            'sh_youbian'=>$sh_youbian,
+            'sh_tel'=>$sh_tel,
+            'user_id'=>$session_id
+            );
+        $this->load->model('user_model');
+        $query=$this->user_model->insert_address($data);
+        if($query){
+            echo "<script>alert('成功添加新地址');location.href='../shu_user/myaddress'</script>";
+        }
+    }
+    // 购买商品
+    public function goumai($book_id){
+        $session_id = $this->session->userdata('user_id');
+        $book_num=$_GET['book_num'];
+        if(!$session_id){
+            echo "<script>alert('请先登录');location.href='../login'</script>";
+        }
+        else{
+            $this->load->model('user_model');
+            $da=array(
+                'user_id'=>$session_id
+                );
+            $query=$this->user_model->get_myaddress($da);
+            $result=$this->user_model->get_detail($book_id);
+            $data=array(
+                'addresses'=> $query,
+                'book'=> $result,
+                'book_num'=>$book_num
+                );
+            // $da=array(
+            //     'user_id'=>$session_id
+            //     );
+            // $query=$this->user_model->get_myaddress($da);
+            // $data=array(
+            //     'addresses'=> $query
+            //     );
+            $this->load->view('goumai',$data);
+        }
+    }
+    // 提交订单
+    public function tj_dingdan($book_id){
+        $session_id = $this->session->userdata('user_id');
+        $this->load->model('user_model');
+        $result_row=$this->user_model->get_detail($book_id);
+        $book_num=$_GET['book_num'];
+        $sy_num=$result_row->book_num-$book_num;
+        $price=$_GET['price'];
+        $da=array(
+            'book_num'=>$sy_num
+            );
+        $result=$this->user_model->updata_book_num($da,$book_id);
+        if($result){
+            echo "1";
+        }
+        else{
+            echo "2";
+        }
+
+    }
 }
