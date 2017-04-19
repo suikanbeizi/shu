@@ -47,6 +47,23 @@ class User_model extends  CI_Model{
     	// return $query=$this->db->get("book")->result();
     }
     // 分类
+     public function get_fenlei_qx($fenlei){
+        $sql="select * from book  order by book_csnum";
+         return $xquery=$this->db->query($sql)->result();
+     }
+      public function get_fenlei_qp($fenlei){
+        $sql="select * from book  order by book_pingfen";
+         return $xquery=$this->db->query($sql)->result();
+     }
+      public function get_fenlei_qz($fenlei){
+        $sql="select * from book  order by book_time";
+         return $xquery=$this->db->query($sql)->result();
+     }
+      public function get_fenlei_qj($fenlei){
+        $sql="select * from book  order by book_price";
+         return $xquery=$this->db->query($sql)->result();
+     }
+
      public function get_fenlei_x($fenlei){
      	$sql="select * from book where book_fenlei='".$fenlei."' order by book_csnum";
     	 return $xquery=$this->db->query($sql)->result();
@@ -113,4 +130,81 @@ class User_model extends  CI_Model{
         $this->db->where('book_id', $book_id);
         return $query=$this->db->update('book',$da);
      }
+     // 下单 
+     public function insert_dingdan($data){
+        return $query=$this->db->insert("dingdan",$data);
+     }
+     //展示订单
+     public function get_dingdan($session_id){
+        $sql="select book.book_name,book.book_img,dingdan.d_id,dingdan.d_time,dingdan.d_num,dingdan.d_price,concat(sh_address.sh_diqu,sh_address.sh_jiedao) as address from book INNER JOIN dingdan ON book.book_id=dingdan.d_book_id INNER JOIN sh_address on sh_address.address_id=dingdan.d_address_id where book_id in (select dingdan.d_book_id from dingdan where d_user_id=".$session_id.")";
+        return $result=$this->db->query($sql)->result();
+     }
+     // 搜索书籍
+     public function search($search){
+        $sql="SELECT * from book WHERE book_name like '%".$search."%' ORDER BY book_csnum";
+        return $result=$this->db->query($sql)->result();
+     }
+     // 加入购物车
+     public function insert_car($data){
+        return $result=$this->db->insert('car',$data);
+     }
+     // 展示购物车
+     public function get_gouwuche($session_id){
+        $sql="select book.book_id,book.book_name,book.book_img,car.car_id,car.book_num,car.price from book INNER JOIN car ON car.book_id=book.book_id WHERE book.book_id IN (SELECT car.book_id FROM car WHERE user_id=".$session_id.")";
+        return $result=$this->db->query($sql)->result();
+     }
+     // 管理后台
+     // 用户信息
+     public function admin_get_user_count(){
+        $sql="select count(*) as count from user where role=1 ";
+        return $count=$this->db->query($sql)->row();
+     }
+     public function admin_get_users(){
+        $sql="select *  from user where role=1 ";
+        return $result=$this->db->query($sql)->result();
+     }
+     // 书籍信息
+     public function admin_get_book_count(){
+        $sql="select count(*) as count from book where book_num>0 ";
+        return $count=$this->db->query($sql)->row();
+     }
+     public function admin_get_books(){
+        $sql="select * from book ";
+        return $xquery=$this->db->query($sql)->result();
+     }
+     //订单信息
+     public function admin_get_dingdan_count(){
+        $sql="select count(*) as count from dingdan";
+        return $count=$this->db->query($sql)->row();
+     }
+
+     public function admin_get_dingdans(){
+        $sql="select book.book_name,book.book_img,dingdan.d_id,dingdan.d_time,dingdan.d_num,dingdan.d_price from book INNER JOIN dingdan ON book.book_id=dingdan.d_book_id where book_id in (select dingdan.d_book_id from dingdan )";
+        return $result=$this->db->query($sql)->result();
+     }
+     // 销售额
+     public function admin_get_chushou_count(){
+        $sql="select SUM(d_price) as count from dingdan";
+        return $count=$this->db->query($sql)->row();
+     }
+     // 添加书籍
+     public function admin_insert_book($data){
+        return $result=$this->db->insert('book',$data);
+     }
+     //修改书籍
+     public function admin_xiugai_book($data,$book_id){
+        $this->db->where('book_id', $book_id);
+        return $query=$this->db->update('book',$data);
+     }
+     //删除书籍
+     public function admin_del_book($book_id){
+        $this->db->where('book_id', $book_id);
+        return $query=$this->db->delete('book');
+     }
+     // 获取需要修改的书籍
+     public function admin_get_book($book_id){
+        $sql="select *  from book where book_id=".$book_id;
+        return $row=$this->db->query($sql)->row();
+     }
+
 }   

@@ -13,7 +13,7 @@
 <?php include 'top.php'; ?>
 <?php include 'head.php'; ?>
 <div class="hp_title">
-		<h1><?php echo $fenlei ?>书籍</h1>
+		<h1><?php echo $fenlei ?>书籍<span>(<?php echo sizeof($xbooks) ?>)</span></h1>
 		<h2><a href="javascript:void(0);" class="cstyle">销量<span class="glyphicon glyphicon-arrow-down"></span></a>
 		<a href="javascript:void(0);">好评<span class="glyphicon glyphicon-arrow-down"></span></a>
 		<a href="javascript:void(0);">最新<span class="glyphicon glyphicon-arrow-down"></span></a>

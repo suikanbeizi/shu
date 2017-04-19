@@ -128,3 +128,56 @@
 	color: #fff;
 	border-radius: 10px;
 }
+/*我的订单*/
+.ddList{
+	border:1px solid #e2e2e2;
+}
+.ddList h1{
+	margin: 0;
+	height: 42px;
+	line-height: 42px;
+	background-color: #ececec;
+	text-align: left;
+	font-size: 14px;
+	color: #666;
+	padding-left: 50px;
+}
+.ddList h1 span{
+	margin-left: 20px;
+}
+.ddList p{
+	height: 100px;
+	line-height: 100px;
+	padding-left: 10px;
+}
+.ddList p img{
+	width: 80px;
+	height: 80px;
+}
+.ddList p a{
+	display: inline-block;
+	margin-left: 10px;
+	width: 150px;
+	vertical-align: top;
+}
+.ddList p span{
+	display: inline-block;
+	width: 100px;
+	margin-left: 20px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+
+}
+.zhifu{
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #d33f14;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 30px; 
+}
+.zhifu:hover{
+	color: #fff;
+}

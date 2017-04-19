@@ -23,12 +23,12 @@
 		</ul>
 		<h3><span></span>我的交易</h3>
 		<ul>
-			<li><a href="mydingdan">我的订单</a></li>
-			<li><a href="mygwc">购物车</a></li>
+			<li><a href="dingdan">我的订单</a></li>
+			<li><a href="gouwuche">购物车</a></li>
 		</ul>
 	</div>
 	<div class="personRight">
-		<h4>编辑个人档案<span>(带<i>*</i>号的项目为必填项)</span></h1>
+		<h4>编辑个人档案<span>(带<i>*</i>号的项目为必填项)</span></h4>
 		<form action="<?php echo site_url('index.php/shu_user/inset_person')?>" method="POST">
 			<div><label for="username"><span>*</span>昵称：</label><input type="text" name="username" id="username" value="<?php echo $users->username ?>"></div>
 			<div><label for="city"><span>*</span>居住地：</label><input type="text" name="city" id="city" value="<?php echo $users->user_city ?>"></div>

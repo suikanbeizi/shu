@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>购买</title>
+	<title>购买 <?php echo $book->book_name ?></title>
 	<link href="<?php echo site_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">
 	<link href="<?php echo site_url('assets/css/login.css')?>" rel="stylesheet">
 	<link href="<?php echo site_url('assets/css/index_common.css')?>" rel="stylesheet">
@@ -14,11 +14,17 @@
 	<div class="xzDz">
 		<h1>选择收货地址</h1>
 		<ul>
-			<?php foreach($addresses as $address){?>
-			<li><input type="radio" name="address" value="<?php echo $address->address_id?>"><span><?php echo $address->sh_diqu?></span>
+			<?php 
+				if($addresses){
+				foreach($addresses as $address){?>
+			<li><input type="radio" name="address" class="address_id" value="<?php echo $address->address_id?>"><span><?php echo $address->sh_diqu?></span>
 			<span><?php echo $address->sh_jiedao ?></span>
 			<span>(<?php echo $address->sh_name ?>收)</span>
 			<span><?php echo $address->sh_tel ?></span></li>
+			<?php }}
+			else{
+			 ?>
+			<a href="<?php echo site_url('index.php/user_user/myaddress')?>" class="txaddress">请填写地址</a>
 			<?php } ?>
 		</ul>
 	</div>
@@ -55,10 +61,12 @@
     <script src="<?php echo site_url('assets/js/bootstrap.min.js');?>"></script>
     <script src="<?php echo site_url('assets/js/index.js');?>"></script>
     <script>
+    	 $('input:radio:first').attr('checked', 'checked');
     	$('.tijiao').click(function(event) {
     		var bNUm=$('.bNum').val();
     		var price=$('.price_num').text();
-    		location.href="<?php echo site_url('index.php/shu_user/tj_dingdan/'.$book->book_id) ?>"+"?book_num="+bNUm+"&price="+price;
+    		var address_id=$('input:radio:checked').val();
+    		location.href="<?php echo site_url('index.php/shu_user/tj_dingdan/'.$book->book_id) ?>"+"?book_num="+bNUm+"&price="+price+"&address_id="+address_id;
     	});
     </script>
 </html>

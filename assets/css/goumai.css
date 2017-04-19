@@ -76,3 +76,10 @@ ul li{
 .tijiao:hover{
 	color: #fff;
 }
+.txaddress{
+	display: inline-block;
+	color: #ff2832;
+	width: 100px;
+	height: 36px;
+
+}

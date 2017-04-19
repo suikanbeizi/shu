@@ -19,12 +19,13 @@
 			<img src="<?php echo site_url('assets/images/loginBg.jpg')?>" alt="">
 		</div>
 		<div class="wrap">
-			<h1>用户登录</h1>
+			<h1>用户登录<span></h1>
 			<form action="<?php echo site_url('index.php/shu_user/do_login');?>" method="post">
 				<div><span class="glyphicon glyphicon-user"></span><input type="text" class="input" id="username" name="username" placeholder="请输入用户名"></div>
 				<div><span class="glyphicon glyphicon-lock"></span><input type="password" class="input" id="password" name="password" placeholder="密码"> </div>
 				<div><input type="submit" class="loginsub" value="登录"></div>
 				<p class="zhuce"><a href="<?php echo site_url('index.php/shu_user/reg')?>">立即注册</a></p>
+				<p class="zhuce"><a href="<?php echo site_url('index.php/shu_user/admin_login')?>">管理员登录</a></p>
 			</form>
 		</div>
 	</div>

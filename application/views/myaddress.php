@@ -23,8 +23,8 @@
 		</ul>
 		<h3><span></span>我的交易</h3>
 		<ul>
-			<li><a href="mydingdan">我的订单</a></li>
-			<li><a href="mygwc">购物车</a></li>
+			<li><a href="dingdan">我的订单</a></li>
+			<li><a href="gouwuche">购物车</a></li>
 		</ul>
 	</div>
 	<div class="addressRight">
